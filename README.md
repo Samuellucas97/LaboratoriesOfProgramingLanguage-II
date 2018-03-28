@@ -4,13 +4,15 @@ This repository contains the activities and exercicies perfomed in the disciplin
 of the semester 2018.1. In addition, it contains the other projects made by this author,
 carefully documented. Therefore, the projects are organized in the follows folders:
 
-- ClassFive
-- ClassSeven
+- PraticalClassFive
+- PraticalClassSeven
+- PraticalClassNine
+- PraticalClassEleven
 - ExamplesBlueJ
 
 ## Minimum requirements
 
-Java compiler.
+Java compiler and JVM [**Java Virtual Machine**]
 
 ## Author
 
