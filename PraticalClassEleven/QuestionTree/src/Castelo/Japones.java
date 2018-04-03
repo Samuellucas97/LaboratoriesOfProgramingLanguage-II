@@ -1,4 +1,5 @@
 
+
 /**
  * @file      Japones.java
  * @brief     Contém a classe Japones com a implementação de seus métodos
@@ -25,7 +26,7 @@ public class Japones extends Castelo{
   /**
    * @brief   Construtor padrão 
    */ 
-  public Europeu(){
+  public Japones(){
     super();
     numSamurais = 0;
   }
@@ -38,9 +39,9 @@ public class Japones extends Castelo{
    * @param   nome          Nome do castelo japonês
    * @param   numSamurais   Número de paladinos no castelo japonês
    */ 
-  public Europeu(double defesas, double localizacao, 
+  public Japones(double defesas, double localizacao, 
                  double pontosVida, String nome, int numSamurais){
-    super(defesas, localizacao, pontosVida);
+    super(defesas, localizacao, pontosVida, nome);
     this.numSamurais = numSamurais;
   }
   

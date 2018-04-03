@@ -28,10 +28,10 @@ public class Castelo{
    * @brief   Construtor padrão
    */ 
   public Castelo(){
-    defesas = 0;
+    defesas = 20;
     localizacao = 0;
-    pontosVida = 0;
-    nome = new String();
+    pontosVida = 20;
+    nome = new String("Desconhecido");
   }
   
   /**
@@ -43,10 +43,23 @@ public class Castelo{
    */ 
   public Castelo(double defesas, double localizacao, 
                  double pontosVida, String nome){
-    this.defesas = defesas;
-    this.localizacao = localizacao;
-    this.pontosVida = pontosVida;
-    this.nome = new String(nome);
+                   
+    /// VERIFICANDO SE OS DADOS ENTRADOS ATENDEM AOS PADRÕES MÍNIMOS
+    if(defesas > 20 && localizacao > 0 && 
+        pontosVida > 20 && !nome.equals("") ){               
+      this.defesas = defesas;
+      this.localizacao = localizacao;
+      this.pontosVida = pontosVida;
+      this.nome = new String(nome);
+    }else{
+      
+      defesas = 20;
+      localizacao = 0;
+      pontosVida = 20;
+      nome = new String("Desconhecido");
+      
+    }
+    
   }
     
   /**

@@ -1,3 +1,4 @@
+
 /**
  * @file      Europeu.java
  * @brief     Contém a classe Europeu com a implementação de seus métodos
@@ -5,6 +6,9 @@
  * @since     01.04.2018
  * @version   0.0.1
  */
+ 
+ /// PACOTE (BIBLIOTECA) USADO 
+ import java.util.Random;
  
 /**
  * @class   Europeu
@@ -36,7 +40,7 @@ public class Europeu extends Castelo{
    */ 
   public Europeu(double defesas, double localizacao, 
                  double pontosVida, String nome, int numPaladinos){
-    super(defesas, localizacao, pontosVida);
+    super(defesas, localizacao, pontosVida, nome);
     this.numPaladinos = numPaladinos;
   }
   
