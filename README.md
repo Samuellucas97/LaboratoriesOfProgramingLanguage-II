@@ -52,8 +52,8 @@ Java compiler and JVM [**Java Virtual Machine**].
 
 > Pratical Class 18 (_Interface_)
 >
-> - [X] - Medium exercise
-> - [X] - Difficult exercise
+> - [X] Medium exercise
+> - [X] Difficult exercise
 
 
 
