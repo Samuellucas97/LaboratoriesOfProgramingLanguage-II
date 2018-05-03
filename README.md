@@ -46,9 +46,9 @@ Java compiler and JVM [**Java Virtual Machine**].
 
 > Pratical Class 15  (_Classes Abstratas_)
 >
-> - [] - Easy exercise (Imcomplete)
-> - [] - Medium exercise (Imcomplete)
-> - [] - Difficult exercise 
+> - [] Easy exercise (Imcomplete)
+> - [] Medium exercise (Imcomplete)
+> - [] Difficult exercise 
 
 > Pratical Class 18 (_Interface_)
 >
