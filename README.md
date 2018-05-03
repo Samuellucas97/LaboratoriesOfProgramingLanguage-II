@@ -36,7 +36,7 @@ Java compiler and JVM [**Java Virtual Machine**].
 >
 > - [X] Easy exercise
 > - [X] Medium exercise
-> - [ ] Difficult exercise (Imcomplete)
+> - [ ] Difficult exercise (***Incomplete***)
 
 > Pratical Class 11	(_Herança e Polimofismo_)
 >
@@ -46,8 +46,8 @@ Java compiler and JVM [**Java Virtual Machine**].
 
 > Pratical Class 15  (_Classes Abstratas_)
 >
-> - [ ] Easy exercise (Imcomplete)
-> - [ ] Medium exercise (Imcomplete)
+> - [ ] Easy exercise (***Incomplete***)
+> - [ ] Medium exercise (***Incomplete***)
 > - [ ] Difficult exercise 
 
 > Pratical Class 18 (_Interface_)
