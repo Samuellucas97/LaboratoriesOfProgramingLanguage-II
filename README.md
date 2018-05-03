@@ -27,9 +27,9 @@ Java compiler and JVM [**Java Virtual Machine**].
 
 > Pratical Class 7	(_Design de classes_)
 
-	[X] - Easy exercise
-	[X] - Medium exercise
-	[X] - Difficult exercise
+>> - [X] Easy exercise
+>> - [X] Medium exercise
+>> - [ ] Difficult exercise
 
 > Pratical Class 9		(_Herança_)
 
