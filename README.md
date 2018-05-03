@@ -20,39 +20,40 @@ Java compiler and JVM [**Java Virtual Machine**].
 
 
 > Pratical Class 5		(_Usando coleções_)
-
-	[X]- Easy exercise
-	[X]- Medium exercise
-	[X]- Difficult exercise
+>
+> - [X] Easy exercise
+> - [X] Medium exercise
+> - [ ] Difficult exercise
+> - [X] Challenge
 
 > Pratical Class 7	(_Design de classes_)
-
->> - [X] Easy exercise
->> - [X] Medium exercise
->> - [ ] Difficult exercise
+>
+> - [X] Easy exercise
+> - [ ] Medium exercise
+> - [ ] Difficult exercise
 
 > Pratical Class 9		(_Herança_)
-
-	[X] - Easy exercise
-	[X] - Medium exercise
-	[X] - Difficult exercise
+>
+> - [X] Easy exercise
+> - [X] Medium exercise
+> - [ ] Difficult exercise (Imcomplete)
 
 > Pratical Class 11	(_Herança e Polimofismo_)
-
-	[X] - Easy exercise
-	[X] - Medium exercise
-	[X] - Difficult exercise
+>
+> - [X] Easy exercise
+> - [X] Medium exercise
+> - [ ] Difficult exercise
 
 > Pratical Class 15  (_Classes Abstratas_)
-
-	[X] - Easy exercise
-	[X] - Medium exercise
-	[X] - Difficult exercise
+>
+> - [] - Easy exercise (Imcomplete)
+> - [] - Medium exercise (Imcomplete)
+> - [] - Difficult exercise 
 
 > Pratical Class 18 (_Interface_)
-
-	[X] - Medium exercise
-	[X] - Difficult exercise
+>
+> - [X] - Medium exercise
+> - [X] - Difficult exercise
 
 
 
