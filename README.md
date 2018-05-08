@@ -13,7 +13,7 @@ carefully documented. Therefore, the projects are organized in the follows folde
 - ExamplesBlueJ
 
 <p align="right">
-<img src="http://www.lostdesign.net/glossario/java.jpg" width="20%"  />
+<img src="http://www.lostdesign.net/glossario/java.jpg" width="5%"  />
 </p>
 
 
