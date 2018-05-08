@@ -66,4 +66,4 @@ Java compiler and JVM [**Java Virtual Machine**].
 
 ## Author
 
-Samuel Lucas de Moura Ferino (_samuel1797@gmail.com_)    ![License MIT](https://img.shields.io/npm/l/express.svg)
+Samuel Lucas de Moura Ferino (_samuel1797@gmail.com_)    
