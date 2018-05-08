@@ -1,7 +1,7 @@
 # Laboratories of Programing Language - II
 
 <p align="center">
-<img src="http://www.lostdesign.net/glossario/java.jpg" width="50%"  />
+<img src="http://www.lostdesign.net/glossario/java.jpg" width="20%"  />
 </p>
 
 This repository contains the activities and exercicies perfomed in the discipline of **Programing Language II** 
