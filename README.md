@@ -1,5 +1,9 @@
 # Laboratories of Programing Language - II
 
+<p align="center">
+<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj-wdboivfaAhXEhJAKHX6GBtoQjRx6BAgBEAU&url=http%3A%2F%2Fmarvinproject.sourceforge.net%2Fpt%2Findex.html&psig=AOvVaw2Yg-Pd2WiI6XLMoMxuBoyt&ust=1525902193698640" width="50%"  />
+</p>
+
 This repository contains the activities and exercicies perfomed in the discipline of **Programing Language II** 
 of the semester 2018.1. In addition, it contains the other projects made by this author,
 carefully documented. Therefore, the projects are organized in the follows folders:
