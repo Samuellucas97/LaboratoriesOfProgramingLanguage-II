@@ -1,5 +1,7 @@
 # Laboratories of Programing Language - II
 
+![License MIT](https://img.shields.io/npm/l/express.svg)
+
 This repository contains the codes in [Java] of activities and exercicies perfomed in the discipline of **Programing Language II** 
 of the semester 2018.1. In addition, it contains the other projects made by this author,
 carefully documented. Therefore, the projects are organized in the follows folders:
