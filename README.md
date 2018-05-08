@@ -1,6 +1,6 @@
 # Laboratories of Programing Language - II
 
-This repository contains the codes in Java of activities and exercicies perfomed in the discipline of **Programing Language II** 
+This repository contains the codes in [Java] of activities and exercicies perfomed in the discipline of **Programing Language II** 
 of the semester 2018.1. In addition, it contains the other projects made by this author,
 carefully documented. Therefore, the projects are organized in the follows folders:
 
@@ -16,6 +16,7 @@ carefully documented. Therefore, the projects are organized in the follows folde
 <img src="http://www.lostdesign.net/glossario/java.jpg" width="14%"  />
 </p>
 
+[Java]:https://en.wikipedia.org/wiki/Java_(programming_language)
 
 ## Minimum requirements
 
