@@ -10,6 +10,7 @@ carefully documented. Therefore, the projects are organized in the follows folde
 - PraticalClassEleven	(_Herança e Polimofismo_)
 - PraticalClassFifteen  (_Classes Abstratas_)
 - PraticalClassEighteen (_Interface_)
+- PraticalClassTwentyOne (_GUI_)
 - ExamplesBlueJ
 
 <p align="right">
@@ -61,7 +62,10 @@ Java compiler and JVM [**Java Virtual Machine**].
 > - [X] Medium exercise
 > - [X] Difficult exercise
 
-
+> PraticalClassTwentyOne (_GUI_)
+>
+> - [ ] Medium exercise (***Incomplete***)
+> - [ ] Difficult exercise
 
 
 ## Author
