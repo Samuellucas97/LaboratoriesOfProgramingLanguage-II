@@ -4,13 +4,16 @@ This repository contains the codes in [Java] of activities and exercicies perfom
 of the semester 2018.1. In addition, it contains the other projects made by this author,
 carefully documented. Therefore, the projects are organized in the follows folders:
 
-- PraticalClassFive		(_Usando coleções_)
-- PraticalClassSeven	(_Design de classes_)
-- PraticalClassNine		(_Herança_)
-- PraticalClassEleven	(_Herança e Polimofismo_)
-- PraticalClassFifteen  (_Classes Abstratas_)
+- PraticalClassFive		(_Using collections_)
+- PraticalClassSeven	(_Class design_)
+- PraticalClassNine		(_Heritance_)
+- PraticalClassEleven	(_Inheritance and Polymorphism_)
+- PraticalClassFifteen  (_Abstract class_)
 - PraticalClassEighteen (_Interface_)
 - PraticalClassTwentyOne (_GUI_)
+- PraticalClassTwentyTwo (_Exception handling_)
+- PraticalClassTwentyFour (_JUnit5_)
+
 - ExamplesBlueJ
 
 <p align="right">
@@ -66,6 +69,28 @@ Java compiler and JVM [**Java Virtual Machine**].
 >
 > - [ ] Medium exercise (***Incomplete***)
 > - [ ] Difficult exercise
+
+> PraticalClassTwentyTwo (_Exception handling_)
+>
+> - [ ] Difficult exercise (***Incomplete***)
+> - [ ] Medium exercise
+
+> PraticalClassTwentyFour (_JUnit5_)
+>
+> - [ ] Difficult exercise
+> - [ ] Challenge (***Incomplete***)
+
+### Reference 
+
+
+<p align="left">
+<img src="https://cdn-images-1.medium.com/max/982/1*AiTBjfsoj3emarTpaeNgKQ.png" width="14%"  />
+</p>
+
+[https://junit.org/junit5/]
+
+[https://junit.org/junit5/]: https://junit.org/junit5/
+
 
 
 ## Author
