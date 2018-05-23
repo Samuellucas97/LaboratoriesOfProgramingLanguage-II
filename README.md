@@ -73,13 +73,12 @@ Java compiler and JVM [**Java Virtual Machine**].
 > PraticalClassTwentyTwo (_Exception handling_)
 >
 > - [ ] Difficult exercise (***Incomplete***)
-> - [ ] Medium exercise
+> - [ ] Medium exercise (***Incomplete***)
 
 > PraticalClassTwentyFour (_JUnit5_)
 >
 > - [ ] Difficult exercise
-> - [ ] Challenge (***Incomplete***)
-
+> - [X] Challenge 
 ## Reference 
 
 
