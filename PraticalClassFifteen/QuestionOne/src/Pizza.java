@@ -1,25 +1,27 @@
 /**
- * @file    Pizza.java
- * @brief   ContÃ©m a classe Pizza como a implementaÃ§Ã£o de seus mÃ©todos 
- * @author  Samuel Lucas de Moura Ferino
- * @since   20.03.2018
- * @version 0.0.1 
+ * Contém a classe Pizza como a implementação de seus métodos 
  */
- 
+
+package produtos;
+
 /**
- * @class Pizza
- */ 
+ * Representa uma Pizza
+ * @author  Samuel Lucas de Moura Ferino
+ * @see Produto
+ * @see ProdutoNaoDuravel
+ * @since   20.03.2018
+ * @version 0.0.3 
+*/ 
 public class Pizza extends ProdutoNaoDuravel{
   
-  /// ATRIBUTO
+  // -> ATRIBUTO
  
-  /**<  Ingredientes que compÃµem a pizza */
-  private String ingredientes;
+  private String ingredientes; // -> Ingredientes que compõem a pizza 
  
- /// MÃ‰TODOS
+ // -> MÉTODOS
  
  /**
-  * @brief  Construtor padrÃ£o
+  * Construtor padrão
   */ 
  public Pizza(){
    super();
@@ -27,48 +29,57 @@ public class Pizza extends ProdutoNaoDuravel{
  }
  
  /**
-  * @brief   Construtor parametrizado  
+  * Construtor parametrizado  
   * @param   id                    ID da pizza
   * @param   nome                  Nome do tipo da pizza
-  * @param   preco                 PreÃ§o da pizza
+  * @param   preco                 Preço da pizza
   * @param   marca                 Marca da pizza
-  * @param   descricao             DescriÃ§Ã£o da pizza
-  * @param   dataDeFabricacao      Data de fabricaÃ§Ã£o da pizza
+  * @param   descricao             Descrição da pizza
+  * @param   dataDeFabricacao      Data de fabricação da pizza
   * @param   dataDeValidade        Data de validade da pizza 
-  * @param   genero                GÃªnero da pizza
+  * @param   genero                Gênero da pizza
   * @param   ingredientes          Ingredientes da pizza
   */ 
   public Pizza( int id, String nome, double preco, String marca,
     String descricao, String dataDeFabricacao, String dataDeValidade, 
     String genero, String ingredientes){
+    
     super(id, nome, preco, marca, descricao, dataDeFabricacao, dataDeValidade, genero);
-    this.ingredientes = new String(ingredientes);
+    
+    try{
+        if(ingredientes.equals("")){  // -> VERIFICANDO SE FOI PASSADO PELO USUÁRIO UMA STRING VAZIA
+            throw new Exception("Eh necessario inserir os ingredientes da pizza no construtor...");
+        }
+        this.ingredientes = new String(ingredientes);
+    }
+    catch( NullPointerException e){
+        System.err.println( e.getMessage() );
+    }
+    catch( Exception e){
+        System.err.println( e.getMessage() );
+    }
   }
   
   /**
-   * @brief   MÃ©todo get do atributo ingredientes
+   * Método get do atributo ingredientes
    * @return  Ingredientes da pizza
    */ 
   public String getIngredientes(){ return ingredientes; }
 
   /**
-   * @brief   MÃ©todo set do atributo ingredientes
-   * @param   ingredientes  Ingredientes da pizza
+   * Método set do atributo ingredientes
+   * @param   ingredientes  Novos ingredientes da pizza
    */ 
   public void setIngredientes(String ingredientes){ this.ingredientes = ingredientes; }  
   
-  
-  /**
-   * @brief   Verifica se a pizzza estÃ¡ disponÃ­vel para venda
-   * @return  true se for senÃ£o false
-   */ 
-  public boolean disponivelParaVenda(){
-    if( id == getID() )
-      return true;
-    else 
-      return false;  
+  public boolean vender( double preco){
+      
+      if( super.disponivelParaVenda() == true && preco >= super.getPreco() )
+          return true;
+      else
+          return false;
+      
   }
-
- 
+  
 }
   

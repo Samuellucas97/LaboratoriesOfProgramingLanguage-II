@@ -1,106 +1,87 @@
 /**
- * @file    Produto.java
- * @brief   Cont√©m a classe abstrata Produto  
- * @author  Samuel Lucas de Moura Ferino
- * @since   20.03.2018
- * @version 0.0.1 
+ * ContÈm a classe Produto e a implementaÁ„o de seus mÈtodos
  */
  
+package produtos;
 /**
- * @class Produto
+ * Representa um produto genÈrico
+ * @see     java.lang.Object
+ * @author  Samuel Lucas de Moura Ferino
+ * @since   20.03.2018
+ * @version 0.1.0 
  */ 
 public abstract class Produto{
   
-  /// ATRIBUTOS 
+  /// -> ATRIBUTOS 
   
-  /**<  Id do produto */
-  private int id;
-  /**<  Situa√ß√£o do produto */
-  private boolean vendido;
-  /**<  Nome do produto */
-  private String nome; 
-  /**< Pre√ßo do produto */
-  private double preco; 
-  /**< Marca do produto */
-  private String marca; 
-  /**< Descri√ß√£o do produto */
-  private String descricao; 
-  /**< Data de fabrica√ß√£o do produto */
-  private String dataDeFabricacao;
+  private int id; // ->  Id do produto
+  private boolean vendido; // ->  SituaÁ„o do produto 
+  private String nome; // ->  Nome do produto 
+  private double preco; // ->  PreÁo do produto
+  private String marca; // -> Marca do produto 
+  private String descricao;  // -> DescriÁ„o do produto 
+  private String dataDeFabricacao; // ->  Data de fabricaÁ„o do produto 
   
-  /// M√âTODOS
+  /// -> M…TODOS
   
   /**
-   * @brief Construtor padr√£o
+   * Construtor padr„o
    */ 
   public Produto(){ 
+      
     id = 0;
+    vendido = false;
     nome = new String();
     preco = 0.0;
     marca = new String();
     descricao = new String();
     dataDeFabricacao = new String();
+    
   }
   
   /**
-   * @brief   Construtor parametrizado
+   * Construtor parametrizado
    * @param   id                    ID do produto
    * @param   nome                  Nome do produto
-   * @param   preco                 Pre√ßo do produto
+   * @param   preco                 PreÁo do produto
    * @param   marca                 Marca do produto
-   * @param   descricao             Descri√ß√£o do produto
-   * @param   dataDeFabricacao      Data de fabrica√ß√£o do produto
+   * @param   descricao             DescriÁ„o do produto
+   * @param   dataDeFabricacao      Data de fabricaÁ„o do produto
    */ 
   public Produto( int id, String nome, double preco, String marca,
     String descricao, String dataDeFabricacao) {
-      this.id = id;
-      this.nome = new String(nome);
-      this.preco = preco;
-      this.marca = new String(marca);
-      this.descricao = new String(descricao);
-      this.dataDeFabricacao = new String(dataDeFabricacao);
+        
+        try{
+            this.id = id;
+            this.vendido = false;
+            this.nome = new String(nome);
+            
+            if( preco <= 0){
+                throw new Exception("O preco precisa ser maior que 0...");
+            }
+            
+            this.preco = preco;
+            this.marca = new String(marca);
+            this.descricao = new String(descricao);
+            this.dataDeFabricacao = new String(dataDeFabricacao);
+        }
+        catch( NullPointerException e ){ 
+            System.err.println( e.getMessage() );
+        }
+        catch( Exception e ){
+            System.err.println( e.getMessage() );
+        }
+        
   }
   
-  
   /**
-   * @brief   M√©todo get do atributo id
+   * MÈtodo get do atributo id
    * @return  ID do produto
    */ 
-  public int getID(){ return id; }
+  public int getId(){ return id; }
   
   /**
-   * @brief   M√©todo get do atributo nome
-   * @return  Nome do produto
-   */ 
-  public String getNome(){ return nome; }
-  
-  /**
-   * @brief   M√©todo get do atributo preco
-   * @return  Pre√ßo do produto
-   */ 
-  public double getPreco(){ return preco; }
-  
-  /**
-   * @brief   M√©todo get do atributo marca
-   * @return  Marca do produto
-   */ 
-  public String getMarca(){ return marca; }
-  
-  /**
-   * @brief   M√©todo get do atributo descricao
-   * @return  Descri√ß√£o do produto
-   */ 
-  public String getDescricao(){ return descricao; }
-  
-  /**
-   * @brief   M√©todo get do atributo dataDeFabricao
-   * @return  Data de fabricao do produto
-   */ 
-  public String getDataDeFabricacao(){ return dataDeFabricacao; }
-  
-  
-  /**
-   * @brief   M√©todo set do atributo id
+   * MÈtodo set do atributo id
    * @param   id  ID do produto
    */ 
   public void setID(int id){ 
@@ -108,7 +89,25 @@ public abstract class Produto{
   }
   
   /**
-   * @brief   M√©todo set do atributo nome
+   * MÈtodo get do atributo vendido
+   * @return  SituaÁ„o do produto
+   */ 
+  public boolean getVendido(){ return this.vendido; }
+  
+  /**
+   * MÈtodo set do atributo vendido
+   * @param  vendido  Nova situaÁ„o do produto
+   */ 
+  public void setVendido( boolean vendido){ this.vendido = vendido; }
+  
+  /**
+   * MÈtodo get do atributo nome
+   * @return  Nome do produto
+   */ 
+  public String getNome(){ return nome; }
+  
+  /**
+   * MÈtodo set do atributo nome
    * @param   nome  Nome do produto
    */ 
   public void setNome(String nome){ 
@@ -116,43 +115,66 @@ public abstract class Produto{
   }
   
   /**
-   * @brief   M√©todo set do atributo preco
-   * @param   preco  Pre√ßo do produto
+   * MÈtodo get do atributo preco
+   * @return  PreÁo do produto
+   */ 
+  public double getPreco(){ return preco; }
+  
+  /**
+   * MÈtodo set do atributo preco
+   * @param   preco  PreÁo do produto
    */ 
   public void setPreco(double preco){ 
     this.preco = preco; 
   }
   
   /**
-   * @brief   M√©todo set do atributo marca
+   * MÈtodo get do atributo marca
+   * @return  Marca do produto
+   */ 
+  public String getMarca(){ return marca; }
+  
+  /**
+   * MÈtodo set do atributo marca
    * @param   marca  Marca do produto
    */ 
   public void setMarca(String marca){ 
     this.marca = marca; 
   }
+  /**
+   * MÈtodo get do atributo descricao
+   * @return  DescriÁ„o do produto
+   */ 
+  public String getDescricao(){ return descricao; }
   
   /**
-   * @brief   M√©todo set do atributo descricao
-   * @param   descricao  Descri√ß√£o do produto
+   * MÈtodo set do atributo descricao
+   * @param   descricao  DescriÁ„o do produto
    */ 
   public void setDescricao(String descricao){ 
     this.descricao = descricao; 
   }
   
   /**
-   * @brief   M√©todo set do atributo dataDeFabricao
-   * @param   dataDeFabricao  Data de fabrica√ß√£o do produto
+   * MÈtodo get do atributo dataDeFabricao
+   * @return  Data de fabricaÁ„o do produto
+   */ 
+  public String getDataDeFabricacao(){ return dataDeFabricacao; }
+    
+  /**
+   * MÈtodo set do atributo dataDeFabricao
+   * @param   dataDeFabricao  Data de fabricaÁ„o do produto
    */ 
   public void setDataDeFabricacao(String dataDeFabricacao){ 
     this.dataDeFabricacao = dataDeFabricacao; 
   }
   
   /**
-   * @brief   Imprime os atributos da classe abstrata Produto
+   * Imprime os atributos da classe abstrata Produto
    */ 
   public void print(){
     
-    System.out.println( "\nID: "                + getID() +
+    System.out.println( "\nID: "                + getId() +
                         "\nNome: "              + getNome() +
                         "\nPreco: "             + getPreco() +
                         "\nMarca: "             + getMarca() +
@@ -162,8 +184,22 @@ public abstract class Produto{
   }
   
   /**
-   * @brief   Verifica se o produto est√° dispon√≠vel para venda
-   * @return  true se for sen√£o false
+   * Transforma em string os atributos, retornando-os
+   * @return String contendo os atributos da classe 
+   */
+  @Override
+  public String toString(){
+    return  "\nID: " + getId() +
+            "  Nome: "  + getNome() +
+            "  Preco: "  + getPreco() +
+            "  Marca: " + getMarca() +
+            "  Descricao: " + getDescricao() + 
+            "  Data de fabricao: " + getDataDeFabricacao(); 
+  }
+  
+  /**
+   * Verifica se o produto est· disponÌvel para venda
+   * @return  true se for, sen„o false
    */ 
   public abstract boolean disponivelParaVenda();
   

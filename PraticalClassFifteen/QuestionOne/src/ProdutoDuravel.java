@@ -1,94 +1,120 @@
 /**
- * @file    ProdutoDuravel.java
- * @brief   Cont√©m a classe abstrata ProdutoDuravel 
+ * ContÈm a classe ProdutoDuravel e a implementaÁ„o de seus mÈtodos
+ */
+
+package produtos;
+
+/**
+ * Representa um produto dur·vel genÈrico
+ * @see     Produto
  * @author  Samuel Lucas de Moura Ferino
  * @since   20.03.2018
- * @version 0.0.1 
- */
- 
-/**
- * @class ProdutoDuravel
+ * @version 0.0.5 
  */
 public abstract class ProdutoDuravel extends Produto{
   
-  /// ATRIBUTOS
+  // -> ATRIBUTOS
   
-  /**<  Material predominante no produto dur√°vel */
-  private String materialPredominante;
-  /**<  Durabilidade do produto dur√°vel */
-  private String durabilidade;
-  /**<  H√° Avaria no produto dur√°vel */
-  private boolean avaria;
-  
-  /// M√âTODOS
+  private String materialPredominante; // ->  Material predominante no produto dur·vel
+  private String durabilidade; // ->  Durabilidade do produto dur·vel 
+  private boolean avaria; // -> H· avaria no produto dur·vel
+
+  // -> M…TODOS
   
   /**
-   * @brief   Construtor padr√£o
+   * Construtor padr„o
    */ 
   public ProdutoDuravel(){
-    super();
-    this.materialPredominante = new String();
-    this.durabilidade = new String();
-    this.avaria = new String();
+      
+    super(); // -> CHAMANDO O CONSTRUTOR DA CLASSE PAI/M√E
+    
+    this.materialPredominante = new String("");
+    this.durabilidade = new String("");
+    this.avaria = false;
+  
   }
   
   /**
-   * @brief   Construtor parametrizado
-   * @param   id                    ID do produto dur√°vel
-   * @param   nome                  Nome do modelo do produto dur√°vel
-   * @param   preco                 Pre√ßo do produto dur√°vel
-   * @param   marca                 Marca do produto dur√°vel
-   * @param   descricao             Descri√ß√£o do produto dur√°vel
-   * @param   dataDeFabricacao      Data de fabrica√ß√£o do produto dur√°vel
-   * @param   materialPredominante  Material predominante no produto dur√°vel
-   * @param   avaria                Avaria do produto dur√°vel
+   * Construtor parametrizado
+   * @param   id                    ID do produto dur·vel
+   * @param   nome                  Nome do modelo do produto dur·vel
+   * @param   preco                 PreÁo do produto dur·vel
+   * @param   marca                 Marca do produto dur·vel
+   * @param   descricao             DescriÁ„o do produto dur·vel
+   * @param   dataDeFabricacao      Data de fabricaÁ„o do produto dur·vel
+   * @param   materialPredominante  Material predominante no produto dur·vel
+   * @param   avaria                Avaria do produto dur·vel
    */ 
-  public ProdutoDuravel( int id, String nome, double preco, String marca, String descricao, String dataDeFabricacao, String materialPredominante, String durabilidade, String  avaria){
+  public ProdutoDuravel( int id, String nome, double preco, String marca, 
+          String descricao, String dataDeFabricacao, String materialPredominante, 
+          String durabilidade, boolean  avaria){
+      
     super( id, nome, preco, marca, descricao, dataDeFabricacao);
-    this.materialPredominante = new String(materialPredominante);
-    this.durabilidade = new String(durabilidade);
-    this.avaria = new String(avaria);
+    
+    try{
+        
+        if( materialPredominante.equals("") ){   // -> VERIFICANDO SE FOI PASSADO PELO USU¡RIO UMA STRING VAZIA
+            throw new Exception("Eh necessario escrever qual eh o material predominante no produto...");
+        }
+        
+        this.materialPredominante = new String(materialPredominante);
+        
+        if( durabilidade.equals("") ){   // -> VERIFICANDO SE FOI PASSADO PELO USU¡RIO UMA STRING VAZIA
+            throw new Exception("Eh necessario escrever sobre a durabilidade do produto... ");
+        }
+        
+        this.durabilidade = new String(durabilidade);
+        this.avaria =  avaria;
+
+    }
+    catch( NullPointerException e ){
+        System.err.println( e.getMessage() );
+    }
+    catch( Exception e){
+        System.err.println( e.getMessage() );
+    }
+    
   }
   
   /**
-   * @brief   M√©todo get do atributo materialPredominante
-   * @return  Material predominante que comp√µem o produto dur√°vel
+   * MÈtodo get do atributo materialPredominante
+   * @return  Material predominante que compıem o produto dur·vel
    */ 
   public String getMaterialPredominante(){ return materialPredominante; }
   
   /**
-   * @brief   M√©todo get do atributo durabilidade
-   * @return  Durabilidade do produto dur√°vel
-   */ 
-  public String getDurabilidade(){ return durabilidade; }
-  
-  /**
-   * @brief   M√©todo get do atributo avaria
-   * @return  Avaria do produto dur√°vel
-   */ 
-  public String getAvaria(){ return avaria; }
-  
-  /**
-   * @brief   M√©todo set do atributo materialPredominante
-   * @param   materialPredominante  Material predominante que comp√µem o produto dur√°vel
+   * MÈtodo set do atributo materialPredominante
+   * @param   materialPredominante  Material predominante que compıem o produto dur·vel
    */ 
   public void setMaterialPredominante(String materialPredominante){ 
     this.materialPredominante = materialPredominante; 
   }
   
   /**
-   * @brief   M√©todo set do atributo durabilidade
-   * @return  durabilidade  Durabilidade do produto dur√°vel
+   * MÈtodo get do atributo durabilidade
+   * @return  Durabilidade do produto dur·vel
+   */ 
+  public String getDurabilidade(){ return durabilidade; }
+  
+  /**
+   * MÈtodo set do atributo durabilidade
+   * @return  durabilidade  Durabilidade do produto dur·vel
    */ 
   public void setDurabilidade(String durabilidade){ 
     this.durabilidade = durabilidade; 
   }
   
   /**
-   * @brief   M√©todo set do atributo avaria
-   * @return  avaria  Avaria do produto dur√°vel
+   * MÈtodo get do atributo avaria
+   * @return  Avaria do produto dur·vel
    */ 
-  public void setAvaria(String avaria){ 
+  public boolean getAvaria(){ return avaria; }
+  
+  /**
+   * MÈtodo set do atributo avaria
+   * @return  avaria  Avaria do produto dur·vel
+   */ 
+  public void setAvaria(boolean avaria){ 
     this.avaria = avaria; 
   }
   
@@ -97,26 +123,37 @@ public abstract class ProdutoDuravel extends Produto{
    */ 
   public void print(){
     
-    System.out.println( "\nID: "                    + getID() +
-                        "\nNome: "                  + getNome() +
-                        "\nPreco: "                 + getPreco() +
-                        "\nMarca: "                 + getMarca() +
-                        "\nDescricao: "             + getDescricao() + 
-                        "\nData de fabricao: "      + getDataDeFabricacao() +
-                        "\nMaterial predominante: " + getMaterialPredominante() +
-                        "\nDurabilidade: "          + getDurabilidade() );
+    super.print();  
+      
+    System.out.println(
+                        "\nMaterial predominante: " + this.materialPredominante +
+                        "\nDurabilidade: "          + this.durabilidade +
+                        "\nAvaria: "                + this.avaria );
     
   }
   
+  @Override
+  public String toString(){
+      return super().toString() + 
+              "  Material predominante: " + this.materialPredominante +
+              "  Durabilidade: " + this.durabilidade +
+              "  Avaria: " + this.avaria;
+  }
+  
+  
   /**
-   * @brief   Verifica se o produto est√° dispon√≠vel para venda
-   * @return  true se for sen√£o false
+   * Verifica se o produto est· disponÌvel para venda
+   * @return  true se for sen„o false
    */ 
   public boolean disponivelParaVenda(){
     
+    if( super.getVendido() == false )
+        return true;
+    else 
+        return false;
+    
   }
 
-  
   /**
    * @brief   Verifica se o produto dur√°vel √© eletro eletr√¥nico
    * @return  true se for sen√£o false
