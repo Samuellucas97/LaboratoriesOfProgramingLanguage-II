@@ -1,20 +1,16 @@
+
 /**
- * @file      Calculavel.java
- * @brief     Contém a interface Calculavel
+ * Contém a abstração das operações 
  * @author    Samuel Lucas de Moura Ferino
  * @since     24.04.2018
  * @version   0.0.3
  */ 
- 
-/**
- * @interface Calculavel
- */ 
 public interface Calculavel{
 
-  /// MÉTODOS
+  // -> MÉTODOS
 
   /**
-   * @brief   Soma o valor de "a" com o valor de "b"
+   * Soma o valor de "a" com o valor de "b"
    * @param   a   Primeiro operando 
    * @param   b   Segundo operando
    * @return  +(a,b)
@@ -22,7 +18,7 @@ public interface Calculavel{
   public abstract double soma(double a, double b);
   
   /**
-   * @brief   Subtrai o valor de "a" pelo valor de "b"
+   * Subtrai o valor de "a" pelo valor de "b"
    * @param   a   Primeiro operando 
    * @param   b   Segundo operando
    * @return  -(a,b)
@@ -30,7 +26,7 @@ public interface Calculavel{
   public abstract double subtracao(double a, double b);
   
   /**
-   * @brief   Multiplica o valor de "a" pelo valor de "b"
+   * Multiplica o valor de "a" pelo valor de "b"
    * @param   a   Primeiro operando 
    * @param   b   Segundo operando
    * @return  *(a,b)
@@ -38,7 +34,7 @@ public interface Calculavel{
   public abstract double multiplicacao(double a, double b);
  
   /**
-   * @brief   Divide o valor de "a" pelo valor de "b"
+   * Divide o valor de "a" pelo valor de "b"
    * @param   a   Primeiro operando 
    * @param   b   Segundo operando
    * @return  /(a,b)
