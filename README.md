@@ -75,6 +75,7 @@ Java compiler and JVM [**Java Virtual Machine**].
 >
 > - [ ] Difficult exercise (***Incomplete***)
 > - [ ] Medium exercise (***Incomplete***)
+>> Acesse <https://www.devmedia.com.br/entendendo-java-exceptions/29812>
 
 > PraticalClassTwentyFour (_JUnit5_)
 >
