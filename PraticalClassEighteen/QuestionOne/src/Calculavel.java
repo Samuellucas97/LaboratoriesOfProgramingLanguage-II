@@ -1,6 +1,7 @@
 
 /**
  * Contém a abstração das operações 
+ * @see       Object
  * @author    Samuel Lucas de Moura Ferino
  * @since     24.04.2018
  * @version   0.0.3
