@@ -1,33 +1,26 @@
+
+import java.util.Random;
+
 /**
- * @file      NotaAluno.java
- * @brief     Contém a classe NotaAluno
+ * Contém a classe NotaAluno
  * @author    Samuel Lucas de Moura Ferino
  * @since     24.04.2018
  * @version   0.0.1 
  */ 
-
-/**
- * @class     NotaAluno
- */ 
 public class NotaAluno implements Comparable<NotaAluno>{
   
-  /// ATRIBUTOS
+  // -> ATRIBUTOS
   
-  /**<  Matrícula do aluno */
-  private int matricula;
-  /**<  Nome do aluno */
-  private String nomeAluno;
-  /**<  Nota 1 do aluno */
-  private double nota1;
-  /**<  Nota 2 do aluno */
-  private double nota2;
-  /**<  Nota 3 do aluno */
-  private double nota3;
+  private int matricula; // ->  Matrícula do aluno
+  private String nomeAluno; // ->  Nome do aluno 
+  private double nota1; // ->  Nota 1 do aluno 
+  private double nota2; // ->  Nota 2 do aluno 
+  private double nota3; // ->  Nota 3 do aluno 
   
-  /// MÉTODOS
+  // -> MÉTODOS
   
   /**
-   * @brief   Construtor padrão
+   * Construtor padrão
    */ 
   public NotaAluno(){
     matricula = 709;
@@ -38,7 +31,7 @@ public class NotaAluno implements Comparable<NotaAluno>{
   }
   
   /**
-   * @brief   Construtor parametrizado
+   * Construtor parametrizado
    * @param   matricula   Matrícula do aluno
    * @param   nomeAluno   Nome do aluno
    * @param   nota1       Nota 1 do aluno
@@ -49,10 +42,14 @@ public class NotaAluno implements Comparable<NotaAluno>{
               double nota1, double nota2, double nota3){
     this.matricula = matricula;
     
-    if(!nomeAluno.equals("") )
+    try{
+    
+      if( nomeAluno.equals("") ){ // -> NOME INVÁLIDO: String vazia
+         throw new IllegalArgumentException(); 
+      }
+      
       this.nomeAluno = new String(nomeAluno);
-    else     /// NOME INVÁLIDO: String vazia
-      this.nomeAluno = new String("Desconhecido");
+    }     
       
     if( nota3 > 10 )    /// NOTA INVÁLIDA: acima de 10 pontos      
       this.nota3 = 10;
