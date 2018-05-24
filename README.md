@@ -59,7 +59,7 @@ Java compiler and JVM [**Java Virtual Machine**].
 > - [ ] Easy exercise (***Incomplete***)
 > - [ ] Medium exercise (***Incomplete***)
 > - [ ] Difficult exercise (***Incomplete***) 
->> Acesse :page_facing_up: <https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-polimorfismo/#null> 
+>> Acesse           :page_facing_up: <https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-polimorfismo/#null> 
 
 > Pratical Class 18 (_Interface_)
 >
@@ -75,7 +75,7 @@ Java compiler and JVM [**Java Virtual Machine**].
 >
 > - [ ] Difficult exercise (***Incomplete***)
 > - [ ] Medium exercise (***Incomplete***)
->> Acesse :page_facing_up: <https://www.devmedia.com.br/entendendo-java-exceptions/29812> 
+>> Acesse          :page_facing_up: <https://www.devmedia.com.br/entendendo-java-exceptions/29812> 
 
 > PraticalClassTwentyFour (_JUnit5_)
 >
